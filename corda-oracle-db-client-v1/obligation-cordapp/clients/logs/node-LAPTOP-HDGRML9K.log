@@ -1,0 +1,327 @@
+[INFO ] 2022-05-01T14:56:14,958 [main] Server - Starting Server on LAPTOP-HDGRML9K with PID 17764 (C:\Users\Acer\Desktop\project_cordaBlockchain\sample-java-lastversion\Advanced\obligation-cordapp\clients\build\classes\java\main started by Acer in C:\Users\Acer\Desktop\project_cordaBlockchain\sample-java-lastversion\Advanced\obligation-cordapp\clients)
+[INFO ] 2022-05-01T14:56:16,369 [main] Server - No active profile set, falling back to default profiles: default
+[INFO ] 2022-05-01T14:56:16,395 [main] Server - No active profile set, falling back to default profiles: default
+[INFO ] 2022-05-01T14:56:22,418 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2aeefcc: startup date [Sun May 01 21:56:21 ICT 2022]; root of context hierarchy
+[INFO ] 2022-05-01T14:56:22,677 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3cae7b8b: startup date [Sun May 01 21:56:21 ICT 2022]; root of context hierarchy
+[INFO ] 2022-05-01T14:56:22,677 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2aeefcc: startup date [Sun May 01 21:56:21 ICT 2022]; root of context hierarchy
+[INFO ] 2022-05-01T14:56:51,273 [main] TomcatWebServer - Tomcat initialized with port(s): 10009 (http)
+[INFO ] 2022-05-01T14:56:51,276 [main] TomcatWebServer - Tomcat initialized with port(s): 10009 (http)
+[INFO ] 2022-05-01T14:56:51,284 [main] TomcatWebServer - Tomcat initialized with port(s): 10009 (http)
+[INFO ] 2022-05-01T14:56:51,433 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10009"]
+[INFO ] 2022-05-01T14:56:51,433 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10009"]
+[INFO ] 2022-05-01T14:56:51,433 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10009"]
+[INFO ] 2022-05-01T14:56:51,529 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2022-05-01T14:56:51,529 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2022-05-01T14:56:51,529 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2022-05-01T14:56:51,529 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2022-05-01T14:56:51,529 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2022-05-01T14:56:51,531 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2022-05-01T14:56:51,569 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\Acer\AppData\Local\Programs\Python\Python39;C:\Users\Acer\AppData\Local\Programs\Python\Python39\Scripts;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MinGW\bin;C:\Program Files\PuTTY\;C:\Gradle\gradle-5.6.4\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Users\Acer\.cargo\bin;C:\Users\Acer\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Acer\AppData\Local\Programs\Python\Python39\;C:\Users\Acer\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk-15.0.2\bin;C:\Users\Acer\.dotnet\tools;C:\Users\Acer\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.2\bin;;C:\Users\Acer\Downloads\arduino-cli_0.19.3_Windows_64bit;C:\Users\Acer\AppData\Roaming\npm;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Gradle\gradle-5.6.4\bin;C:\Users\Acer\.cargo\bin;;.]
+[INFO ] 2022-05-01T14:56:51,585 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\Acer\AppData\Local\Programs\Python\Python39;C:\Users\Acer\AppData\Local\Programs\Python\Python39\Scripts;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MinGW\bin;C:\Program Files\PuTTY\;C:\Gradle\gradle-5.6.4\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Users\Acer\.cargo\bin;C:\Users\Acer\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Acer\AppData\Local\Programs\Python\Python39\;C:\Users\Acer\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk-15.0.2\bin;C:\Users\Acer\.dotnet\tools;C:\Users\Acer\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.2\bin;;C:\Users\Acer\Downloads\arduino-cli_0.19.3_Windows_64bit;C:\Users\Acer\AppData\Roaming\npm;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Gradle\gradle-5.6.4\bin;C:\Users\Acer\.cargo\bin;;.]
+[INFO ] 2022-05-01T14:56:51,586 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\Acer\AppData\Local\Programs\Python\Python39;C:\Users\Acer\AppData\Local\Programs\Python\Python39\Scripts;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MinGW\bin;C:\Program Files\PuTTY\;C:\Gradle\gradle-5.6.4\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Users\Acer\.cargo\bin;C:\Users\Acer\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Acer\AppData\Local\Programs\Python\Python39\;C:\Users\Acer\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk-15.0.2\bin;C:\Users\Acer\.dotnet\tools;C:\Users\Acer\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.2\bin;;C:\Users\Acer\Downloads\arduino-cli_0.19.3_Windows_64bit;C:\Users\Acer\AppData\Roaming\npm;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Gradle\gradle-5.6.4\bin;C:\Users\Acer\.cargo\bin;;.]
+[INFO ] 2022-05-01T14:56:54,307 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-05-01T14:56:54,308 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-05-01T14:56:54,308 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 32993 ms
+[INFO ] 2022-05-01T14:56:54,308 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-05-01T14:56:54,309 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 32992 ms
+[INFO ] 2022-05-01T14:56:54,309 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 32997 ms
+[INFO ] 2022-05-01T14:56:57,651 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2022-05-01T14:56:57,683 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2022-05-01T14:56:57,684 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2022-05-01T14:56:57,685 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2022-05-01T14:56:57,685 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2022-05-01T14:56:57,711 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2022-05-01T14:56:57,766 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2022-05-01T14:56:57,767 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2022-05-01T14:56:57,772 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2022-05-01T14:56:57,772 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2022-05-01T14:56:57,903 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2022-05-01T14:56:57,950 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2022-05-01T14:56:57,951 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2022-05-01T14:56:57,954 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2022-05-01T14:56:57,955 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2022-05-01T14:58:01,301 [main] RPCClient - Startup took 22569 msec
+[INFO ] 2022-05-01T14:58:01,485 [main] RPCClient - Startup took 9101 msec
+[INFO ] 2022-05-01T14:58:02,612 [main] RPCClient - Startup took 29079 msec
+[INFO ] 2022-05-01T14:58:08,650 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2022-05-01T14:58:09,245 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2022-05-01T14:58:09,497 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3cae7b8b: startup date [Sun May 01 21:56:21 ICT 2022]; root of context hierarchy
+[INFO ] 2022-05-01T14:58:09,665 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2022-05-01T14:58:10,386 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2aeefcc: startup date [Sun May 01 21:56:21 ICT 2022]; root of context hierarchy
+[INFO ] 2022-05-01T14:58:10,392 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/status],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.status()
+[INFO ] 2022-05-01T14:58:10,397 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/states],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.states()
+[INFO ] 2022-05-01T14:58:10,400 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/addresses],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.addresses()
+[INFO ] 2022-05-01T14:58:10,401 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/servertime],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.serverTime()
+[INFO ] 2022-05-01T14:58:10,403 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/me],methods=[GET],produces=[application/json]}" onto private java.util.HashMap<java.lang.String, java.lang.String> net.corda.samples.obligation.server.MainController.whoami()
+[INFO ] 2022-05-01T14:58:10,403 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/ious],methods=[GET],produces=[application/json]}" onto public java.util.List<net.corda.core.contracts.StateAndRef<net.corda.samples.obligation.states.IOUState>> net.corda.samples.obligation.server.MainController.getIOUs()
+[INFO ] 2022-05-01T14:58:10,407 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/cash],methods=[GET],produces=[application/json]}" onto public java.util.List<net.corda.core.contracts.StateAndRef<net.corda.finance.contracts.asset.Cash$State>> net.corda.samples.obligation.server.MainController.getCash()
+[INFO ] 2022-05-01T14:58:10,408 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/cash-balances],methods=[GET],produces=[application/json]}" onto public java.util.Map<java.util.Currency, net.corda.core.contracts.Amount<java.util.Currency>> net.corda.samples.obligation.server.MainController.cashBalances()
+[INFO ] 2022-05-01T14:58:10,417 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/issue-iou],methods=[PUT],produces=[text/plain]}" onto public org.springframework.http.ResponseEntity<java.lang.String> net.corda.samples.obligation.server.MainController.issueIOU(int,java.lang.String,java.lang.String) throws java.lang.IllegalArgumentException
+[INFO ] 2022-05-01T14:58:10,424 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/notaries],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.notaries()
+[INFO ] 2022-05-01T14:58:10,426 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/transfer-iou],methods=[GET],produces=[text/plain]}" onto public org.springframework.http.ResponseEntity<java.lang.String> net.corda.samples.obligation.server.MainController.transferIOU(java.lang.String,java.lang.String)
+[INFO ] 2022-05-01T14:58:10,433 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/platformversion],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.platformVersion()
+[INFO ] 2022-05-01T14:58:10,437 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/peers],methods=[GET],produces=[application/json]}" onto public java.util.HashMap<java.lang.String, java.util.List<java.lang.String>> net.corda.samples.obligation.server.MainController.getPeers()
+[INFO ] 2022-05-01T14:58:10,439 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/flows],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.flows()
+[INFO ] 2022-05-01T14:58:10,475 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/identities],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.identities()
+[INFO ] 2022-05-01T14:58:10,503 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/settle-iou],methods=[GET],produces=[text/plain]}" onto public org.springframework.http.ResponseEntity<java.lang.String> net.corda.samples.obligation.server.MainController.settleIOU(java.lang.String,int,java.lang.String)
+[INFO ] 2022-05-01T14:58:10,505 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/self-issue-cash],methods=[GET],produces=[text/plain]}" onto public org.springframework.http.ResponseEntity<java.lang.String> net.corda.samples.obligation.server.MainController.selfIssueCash(int,java.lang.String)
+[INFO ] 2022-05-01T14:58:10,549 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2022-05-01T14:58:10,551 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2022-05-01T14:58:10,898 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2022-05-01T14:58:10,899 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2022-05-01T14:58:11,102 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2aeefcc: startup date [Sun May 01 21:56:21 ICT 2022]; root of context hierarchy
+[INFO ] 2022-05-01T14:58:11,198 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [public/index.html]
+[INFO ] 2022-05-01T14:58:11,803 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/status],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.status()
+[INFO ] 2022-05-01T14:58:11,805 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/identities],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.identities()
+[INFO ] 2022-05-01T14:58:11,806 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/addresses],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.addresses()
+[INFO ] 2022-05-01T14:58:11,807 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/servertime],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.serverTime()
+[INFO ] 2022-05-01T14:58:11,834 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/notaries],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.notaries()
+[INFO ] 2022-05-01T14:58:11,835 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/cash],methods=[GET],produces=[application/json]}" onto public java.util.List<net.corda.core.contracts.StateAndRef<net.corda.finance.contracts.asset.Cash$State>> net.corda.samples.obligation.server.MainController.getCash()
+[INFO ] 2022-05-01T14:58:11,836 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/self-issue-cash],methods=[GET],produces=[text/plain]}" onto public org.springframework.http.ResponseEntity<java.lang.String> net.corda.samples.obligation.server.MainController.selfIssueCash(int,java.lang.String)
+[INFO ] 2022-05-01T14:58:11,837 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/flows],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.flows()
+[INFO ] 2022-05-01T14:58:11,838 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/platformversion],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.platformVersion()
+[INFO ] 2022-05-01T14:58:11,839 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/peers],methods=[GET],produces=[application/json]}" onto public java.util.HashMap<java.lang.String, java.util.List<java.lang.String>> net.corda.samples.obligation.server.MainController.getPeers()
+[INFO ] 2022-05-01T14:58:11,840 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/ious],methods=[GET],produces=[application/json]}" onto public java.util.List<net.corda.core.contracts.StateAndRef<net.corda.samples.obligation.states.IOUState>> net.corda.samples.obligation.server.MainController.getIOUs()
+[INFO ] 2022-05-01T14:58:11,841 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/settle-iou],methods=[GET],produces=[text/plain]}" onto public org.springframework.http.ResponseEntity<java.lang.String> net.corda.samples.obligation.server.MainController.settleIOU(java.lang.String,int,java.lang.String)
+[INFO ] 2022-05-01T14:58:11,842 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/issue-iou],methods=[PUT],produces=[text/plain]}" onto public org.springframework.http.ResponseEntity<java.lang.String> net.corda.samples.obligation.server.MainController.issueIOU(int,java.lang.String,java.lang.String) throws java.lang.IllegalArgumentException
+[INFO ] 2022-05-01T14:58:11,843 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/me],methods=[GET],produces=[application/json]}" onto private java.util.HashMap<java.lang.String, java.lang.String> net.corda.samples.obligation.server.MainController.whoami()
+[INFO ] 2022-05-01T14:58:11,844 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/cash-balances],methods=[GET],produces=[application/json]}" onto public java.util.Map<java.util.Currency, net.corda.core.contracts.Amount<java.util.Currency>> net.corda.samples.obligation.server.MainController.cashBalances()
+[INFO ] 2022-05-01T14:58:11,846 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/transfer-iou],methods=[GET],produces=[text/plain]}" onto public org.springframework.http.ResponseEntity<java.lang.String> net.corda.samples.obligation.server.MainController.transferIOU(java.lang.String,java.lang.String)
+[INFO ] 2022-05-01T14:58:11,847 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/states],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.states()
+[INFO ] 2022-05-01T14:58:11,851 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2022-05-01T14:58:11,852 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2022-05-01T14:58:12,023 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2022-05-01T14:58:12,024 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2022-05-01T14:58:12,501 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2022-05-01T14:58:12,646 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10009"]
+[INFO ] 2022-05-01T14:58:12,651 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2022-05-01T14:58:12,679 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [public/index.html]
+[INFO ] 2022-05-01T14:58:13,100 [main] TomcatWebServer - Tomcat started on port(s): 10009 (http) with context path ''
+[INFO ] 2022-05-01T14:58:13,117 [main] Server - Started Server in 149.63 seconds (JVM running for 202.942)
+[INFO ] 2022-05-01T14:58:14,373 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2022-05-01T14:58:14,463 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10009"]
+[ERROR] 2022-05-01T14:58:14,464 [main] StandardService - Failed to start connector [Connector[HTTP/1.1-10009]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-10009]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) [spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at net.corda.samples.obligation.server.Server.main(Server.java:20) [main/:?]
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	... 11 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:1.8.0_171]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[?:1.8.0_171]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[?:1.8.0_171]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[?:1.8.0_171]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[?:1.8.0_171]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	... 11 more
+[INFO ] 2022-05-01T14:58:14,911 [main] Http11NioProtocol - Pausing ProtocolHandler ["http-nio-10009"]
+[INFO ] 2022-05-01T14:58:14,912 [main] StandardService - Stopping service [Tomcat]
+[INFO ] 2022-05-01T14:58:15,142 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/status],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.status()
+[INFO ] 2022-05-01T14:58:15,158 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/states],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.states()
+[INFO ] 2022-05-01T14:58:15,159 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/addresses],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.addresses()
+[INFO ] 2022-05-01T14:58:15,160 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/servertime],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.serverTime()
+[INFO ] 2022-05-01T14:58:15,161 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/issue-iou],methods=[PUT],produces=[text/plain]}" onto public org.springframework.http.ResponseEntity<java.lang.String> net.corda.samples.obligation.server.MainController.issueIOU(int,java.lang.String,java.lang.String) throws java.lang.IllegalArgumentException
+[INFO ] 2022-05-01T14:58:15,163 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/cash],methods=[GET],produces=[application/json]}" onto public java.util.List<net.corda.core.contracts.StateAndRef<net.corda.finance.contracts.asset.Cash$State>> net.corda.samples.obligation.server.MainController.getCash()
+[INFO ] 2022-05-01T14:58:15,167 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/cash-balances],methods=[GET],produces=[application/json]}" onto public java.util.Map<java.util.Currency, net.corda.core.contracts.Amount<java.util.Currency>> net.corda.samples.obligation.server.MainController.cashBalances()
+[INFO ] 2022-05-01T14:58:15,168 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/self-issue-cash],methods=[GET],produces=[text/plain]}" onto public org.springframework.http.ResponseEntity<java.lang.String> net.corda.samples.obligation.server.MainController.selfIssueCash(int,java.lang.String)
+[INFO ] 2022-05-01T14:58:15,169 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/ious],methods=[GET],produces=[application/json]}" onto public java.util.List<net.corda.core.contracts.StateAndRef<net.corda.samples.obligation.states.IOUState>> net.corda.samples.obligation.server.MainController.getIOUs()
+[INFO ] 2022-05-01T14:58:15,170 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/platformversion],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.platformVersion()
+[INFO ] 2022-05-01T14:58:15,171 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/peers],methods=[GET],produces=[application/json]}" onto public java.util.HashMap<java.lang.String, java.util.List<java.lang.String>> net.corda.samples.obligation.server.MainController.getPeers()
+[INFO ] 2022-05-01T14:58:15,172 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/me],methods=[GET],produces=[application/json]}" onto private java.util.HashMap<java.lang.String, java.lang.String> net.corda.samples.obligation.server.MainController.whoami()
+[INFO ] 2022-05-01T14:58:15,172 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/flows],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.flows()
+[INFO ] 2022-05-01T14:58:15,173 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/identities],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.identities()
+[INFO ] 2022-05-01T14:58:15,174 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/transfer-iou],methods=[GET],produces=[text/plain]}" onto public org.springframework.http.ResponseEntity<java.lang.String> net.corda.samples.obligation.server.MainController.transferIOU(java.lang.String,java.lang.String)
+[INFO ] 2022-05-01T14:58:15,175 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/notaries],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.notaries()
+[INFO ] 2022-05-01T14:58:15,175 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/settle-iou],methods=[GET],produces=[text/plain]}" onto public org.springframework.http.ResponseEntity<java.lang.String> net.corda.samples.obligation.server.MainController.settleIOU(java.lang.String,int,java.lang.String)
+[INFO ] 2022-05-01T14:58:15,192 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2022-05-01T14:58:15,193 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2022-05-01T14:58:15,444 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2022-05-01T14:58:15,445 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2022-05-01T14:58:15,880 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [public/index.html]
+[INFO ] 2022-05-01T14:58:16,143 [main] LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+[INFO ] 2022-05-01T14:58:16,144 [main] Http11NioProtocol - Stopping ProtocolHandler ["http-nio-10009"]
+[INFO ] 2022-05-01T14:58:16,145 [main] Http11NioProtocol - Destroying ProtocolHandler ["http-nio-10009"]
+[INFO ] 2022-05-01T14:58:16,233 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-05-01T14:58:16,274 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 10009 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 10009, or configure this application to listen on another port.
+
+[INFO ] 2022-05-01T14:58:16,279 [main] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2aeefcc: startup date [Sun May 01 21:56:21 ICT 2022]; root of context hierarchy
+[INFO ] 2022-05-01T14:58:16,303 [main] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2022-05-01T14:58:17,522 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2022-05-01T14:58:17,587 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10009"]
+[ERROR] 2022-05-01T14:58:17,619 [main] StandardService - Failed to start connector [Connector[HTTP/1.1-10009]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-10009]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) [spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at net.corda.samples.obligation.server.Server.main(Server.java:20) [main/:?]
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	... 11 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:1.8.0_171]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[?:1.8.0_171]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[?:1.8.0_171]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[?:1.8.0_171]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[?:1.8.0_171]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	... 11 more
+[INFO ] 2022-05-01T14:58:17,899 [main] Http11NioProtocol - Pausing ProtocolHandler ["http-nio-10009"]
+[INFO ] 2022-05-01T14:58:17,899 [main] StandardService - Stopping service [Tomcat]
+[INFO ] 2022-05-01T14:58:18,066 [main] LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+[INFO ] 2022-05-01T14:58:18,066 [main] Http11NioProtocol - Stopping ProtocolHandler ["http-nio-10009"]
+[INFO ] 2022-05-01T14:58:18,066 [main] Http11NioProtocol - Destroying ProtocolHandler ["http-nio-10009"]
+[INFO ] 2022-05-01T14:58:18,072 [main] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 2022-05-01T14:58:18,173 [main] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 10009 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 10009, or configure this application to listen on another port.
+
+[INFO ] 2022-05-01T14:58:18,176 [main] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2aeefcc: startup date [Sun May 01 21:56:21 ICT 2022]; root of context hierarchy
+[INFO ] 2022-05-01T14:58:18,181 [main] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2022-05-01T15:03:07,433 [main] Server - Starting Server on LAPTOP-HDGRML9K with PID 16740 (C:\Users\Acer\Desktop\project_cordaBlockchain\sample-java-lastversion\Advanced\obligation-cordapp\clients\build\classes\java\main started by Acer in C:\Users\Acer\Desktop\project_cordaBlockchain\sample-java-lastversion\Advanced\obligation-cordapp\clients)
+[INFO ] 2022-05-01T15:03:07,463 [main] Server - No active profile set, falling back to default profiles: default
+[INFO ] 2022-05-01T15:03:07,709 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5782d777: startup date [Sun May 01 22:03:07 ICT 2022]; root of context hierarchy
+[INFO ] 2022-05-01T15:03:14,475 [main] TomcatWebServer - Tomcat initialized with port(s): 10012 (http)
+[INFO ] 2022-05-01T15:03:14,572 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10012"]
+[INFO ] 2022-05-01T15:03:14,648 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2022-05-01T15:03:14,649 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2022-05-01T15:03:14,684 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\Acer\AppData\Local\Programs\Python\Python39;C:\Users\Acer\AppData\Local\Programs\Python\Python39\Scripts;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MinGW\bin;C:\Program Files\PuTTY\;C:\Gradle\gradle-5.6.4\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Users\Acer\.cargo\bin;C:\Users\Acer\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Acer\AppData\Local\Programs\Python\Python39\;C:\Users\Acer\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk-15.0.2\bin;C:\Users\Acer\.dotnet\tools;C:\Users\Acer\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.2\bin;;C:\Users\Acer\Downloads\arduino-cli_0.19.3_Windows_64bit;C:\Users\Acer\AppData\Roaming\npm;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Gradle\gradle-5.6.4\bin;C:\Users\Acer\.cargo\bin;;.]
+[INFO ] 2022-05-01T15:03:15,960 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-05-01T15:03:15,961 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 8258 ms
+[INFO ] 2022-05-01T15:03:16,536 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2022-05-01T15:03:16,558 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2022-05-01T15:03:16,561 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2022-05-01T15:03:16,561 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2022-05-01T15:03:16,561 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2022-05-01T15:03:27,986 [main] Server - Starting Server on LAPTOP-HDGRML9K with PID 9252 (C:\Users\Acer\Desktop\project_cordaBlockchain\sample-java-lastversion\Advanced\obligation-cordapp\clients\build\classes\java\main started by Acer in C:\Users\Acer\Desktop\project_cordaBlockchain\sample-java-lastversion\Advanced\obligation-cordapp\clients)
+[INFO ] 2022-05-01T15:03:28,012 [main] Server - No active profile set, falling back to default profiles: default
+[INFO ] 2022-05-01T15:03:28,223 [main] AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@29629fbb: startup date [Sun May 01 22:03:28 ICT 2022]; root of context hierarchy
+[INFO ] 2022-05-01T15:03:33,390 [main] TomcatWebServer - Tomcat initialized with port(s): 10015 (http)
+[INFO ] 2022-05-01T15:03:33,438 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10015"]
+[INFO ] 2022-05-01T15:03:33,479 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2022-05-01T15:03:33,480 [main] StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2022-05-01T15:03:33,515 [localhost-startStop-1] AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\Acer\AppData\Local\Programs\Python\Python39;C:\Users\Acer\AppData\Local\Programs\Python\Python39\Scripts;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MinGW\bin;C:\Program Files\PuTTY\;C:\Gradle\gradle-5.6.4\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Users\Acer\.cargo\bin;C:\Users\Acer\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Acer\AppData\Local\Programs\Python\Python39\;C:\Users\Acer\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk-15.0.2\bin;C:\Users\Acer\.dotnet\tools;C:\Users\Acer\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.2\bin;;C:\Users\Acer\Downloads\arduino-cli_0.19.3_Windows_64bit;C:\Users\Acer\AppData\Roaming\npm;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Gradle\gradle-5.6.4\bin;C:\Users\Acer\.cargo\bin;;.]
+[INFO ] 2022-05-01T15:03:33,990 [localhost-startStop-1] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2022-05-01T15:03:33,990 [localhost-startStop-1] ContextLoader - Root WebApplicationContext: initialization completed in 5772 ms
+[INFO ] 2022-05-01T15:03:34,230 [localhost-startStop-1] ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2022-05-01T15:03:34,238 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2022-05-01T15:03:34,238 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2022-05-01T15:03:34,239 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2022-05-01T15:03:34,239 [localhost-startStop-1] FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2022-05-01T15:03:34,395 [main] RPCClient - Startup took 5800 msec
+[INFO ] 2022-05-01T15:03:35,967 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2022-05-01T15:03:36,808 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5782d777: startup date [Sun May 01 22:03:07 ICT 2022]; root of context hierarchy
+[INFO ] 2022-05-01T15:03:37,166 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/status],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.status()
+[INFO ] 2022-05-01T15:03:37,168 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/states],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.states()
+[INFO ] 2022-05-01T15:03:37,169 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/addresses],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.addresses()
+[INFO ] 2022-05-01T15:03:37,169 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/cash-balances],methods=[GET],produces=[application/json]}" onto public java.util.Map<java.util.Currency, net.corda.core.contracts.Amount<java.util.Currency>> net.corda.samples.obligation.server.MainController.cashBalances()
+[INFO ] 2022-05-01T15:03:37,170 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/identities],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.identities()
+[INFO ] 2022-05-01T15:03:37,170 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/transfer-iou],methods=[GET],produces=[text/plain]}" onto public org.springframework.http.ResponseEntity<java.lang.String> net.corda.samples.obligation.server.MainController.transferIOU(java.lang.String,java.lang.String)
+[INFO ] 2022-05-01T15:03:37,171 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/self-issue-cash],methods=[GET],produces=[text/plain]}" onto public org.springframework.http.ResponseEntity<java.lang.String> net.corda.samples.obligation.server.MainController.selfIssueCash(int,java.lang.String)
+[INFO ] 2022-05-01T15:03:37,171 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/cash],methods=[GET],produces=[application/json]}" onto public java.util.List<net.corda.core.contracts.StateAndRef<net.corda.finance.contracts.asset.Cash$State>> net.corda.samples.obligation.server.MainController.getCash()
+[INFO ] 2022-05-01T15:03:37,172 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/peers],methods=[GET],produces=[application/json]}" onto public java.util.HashMap<java.lang.String, java.util.List<java.lang.String>> net.corda.samples.obligation.server.MainController.getPeers()
+[INFO ] 2022-05-01T15:03:37,173 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/settle-iou],methods=[GET],produces=[text/plain]}" onto public org.springframework.http.ResponseEntity<java.lang.String> net.corda.samples.obligation.server.MainController.settleIOU(java.lang.String,int,java.lang.String)
+[INFO ] 2022-05-01T15:03:37,174 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/platformversion],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.platformVersion()
+[INFO ] 2022-05-01T15:03:37,175 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/servertime],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.serverTime()
+[INFO ] 2022-05-01T15:03:37,176 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/issue-iou],methods=[PUT],produces=[text/plain]}" onto public org.springframework.http.ResponseEntity<java.lang.String> net.corda.samples.obligation.server.MainController.issueIOU(int,java.lang.String,java.lang.String) throws java.lang.IllegalArgumentException
+[INFO ] 2022-05-01T15:03:37,178 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/flows],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.flows()
+[INFO ] 2022-05-01T15:03:37,179 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/notaries],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.notaries()
+[INFO ] 2022-05-01T15:03:37,180 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/me],methods=[GET],produces=[application/json]}" onto private java.util.HashMap<java.lang.String, java.lang.String> net.corda.samples.obligation.server.MainController.whoami()
+[INFO ] 2022-05-01T15:03:37,180 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/ious],methods=[GET],produces=[application/json]}" onto public java.util.List<net.corda.core.contracts.StateAndRef<net.corda.samples.obligation.states.IOUState>> net.corda.samples.obligation.server.MainController.getIOUs()
+[INFO ] 2022-05-01T15:03:37,184 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2022-05-01T15:03:37,185 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2022-05-01T15:03:37,328 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2022-05-01T15:03:37,342 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2022-05-01T15:03:37,652 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [public/index.html]
+[INFO ] 2022-05-01T15:03:38,332 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2022-05-01T15:03:38,394 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10012"]
+[INFO ] 2022-05-01T15:03:38,403 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2022-05-01T15:03:38,481 [main] TomcatWebServer - Tomcat started on port(s): 10012 (http) with context path ''
+[INFO ] 2022-05-01T15:03:38,499 [main] Server - Started Server in 35.052 seconds (JVM running for 42.799)
+[INFO ] 2022-05-01T15:03:45,172 [main] RPCClient - Startup took 2891 msec
+[INFO ] 2022-05-01T15:03:46,389 [main] SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2022-05-01T15:03:46,583 [main] RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@29629fbb: startup date [Sun May 01 22:03:28 ICT 2022]; root of context hierarchy
+[INFO ] 2022-05-01T15:03:46,769 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/status],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.status()
+[INFO ] 2022-05-01T15:03:46,770 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/states],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.states()
+[INFO ] 2022-05-01T15:03:46,771 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/addresses],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.addresses()
+[INFO ] 2022-05-01T15:03:46,771 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/servertime],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.serverTime()
+[INFO ] 2022-05-01T15:03:46,771 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/notaries],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.notaries()
+[INFO ] 2022-05-01T15:03:46,772 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/self-issue-cash],methods=[GET],produces=[text/plain]}" onto public org.springframework.http.ResponseEntity<java.lang.String> net.corda.samples.obligation.server.MainController.selfIssueCash(int,java.lang.String)
+[INFO ] 2022-05-01T15:03:46,773 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/peers],methods=[GET],produces=[application/json]}" onto public java.util.HashMap<java.lang.String, java.util.List<java.lang.String>> net.corda.samples.obligation.server.MainController.getPeers()
+[INFO ] 2022-05-01T15:03:46,773 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/platformversion],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.platformVersion()
+[INFO ] 2022-05-01T15:03:46,774 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/ious],methods=[GET],produces=[application/json]}" onto public java.util.List<net.corda.core.contracts.StateAndRef<net.corda.samples.obligation.states.IOUState>> net.corda.samples.obligation.server.MainController.getIOUs()
+[INFO ] 2022-05-01T15:03:46,774 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/me],methods=[GET],produces=[application/json]}" onto private java.util.HashMap<java.lang.String, java.lang.String> net.corda.samples.obligation.server.MainController.whoami()
+[INFO ] 2022-05-01T15:03:46,774 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/flows],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.flows()
+[INFO ] 2022-05-01T15:03:46,775 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/transfer-iou],methods=[GET],produces=[text/plain]}" onto public org.springframework.http.ResponseEntity<java.lang.String> net.corda.samples.obligation.server.MainController.transferIOU(java.lang.String,java.lang.String)
+[INFO ] 2022-05-01T15:03:46,776 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/identities],methods=[GET],produces=[text/plain]}" onto private java.lang.String net.corda.samples.obligation.server.MainController.identities()
+[INFO ] 2022-05-01T15:03:46,776 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/settle-iou],methods=[GET],produces=[text/plain]}" onto public org.springframework.http.ResponseEntity<java.lang.String> net.corda.samples.obligation.server.MainController.settleIOU(java.lang.String,int,java.lang.String)
+[INFO ] 2022-05-01T15:03:46,777 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/issue-iou],methods=[PUT],produces=[text/plain]}" onto public org.springframework.http.ResponseEntity<java.lang.String> net.corda.samples.obligation.server.MainController.issueIOU(int,java.lang.String,java.lang.String) throws java.lang.IllegalArgumentException
+[INFO ] 2022-05-01T15:03:46,777 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/cash-balances],methods=[GET],produces=[application/json]}" onto public java.util.Map<java.util.Currency, net.corda.core.contracts.Amount<java.util.Currency>> net.corda.samples.obligation.server.MainController.cashBalances()
+[INFO ] 2022-05-01T15:03:46,778 [main] RequestMappingHandlerMapping - Mapped "{[/api/iou/cash],methods=[GET],produces=[application/json]}" onto public java.util.List<net.corda.core.contracts.StateAndRef<net.corda.finance.contracts.asset.Cash$State>> net.corda.samples.obligation.server.MainController.getCash()
+[INFO ] 2022-05-01T15:03:46,780 [main] RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2022-05-01T15:03:46,781 [main] RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2022-05-01T15:03:46,816 [main] SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2022-05-01T15:03:46,816 [main] SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2022-05-01T15:03:46,932 [main] WelcomePageHandlerMapping - Adding welcome page: class path resource [public/index.html]
+[INFO ] 2022-05-01T15:03:47,238 [main] AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2022-05-01T15:03:47,263 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-10015"]
+[INFO ] 2022-05-01T15:03:47,265 [main] NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2022-05-01T15:03:47,301 [main] TomcatWebServer - Tomcat started on port(s): 10015 (http) with context path ''
+[INFO ] 2022-05-01T15:03:47,308 [main] Server - Started Server in 22.625 seconds (JVM running for 27.138)
+[INFO ] 2022-05-01T15:13:24,040 [http-nio-10009-exec-1] [/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2022-05-01T15:13:24,040 [http-nio-10009-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2022-05-01T15:13:24,084 [http-nio-10009-exec-1] DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
