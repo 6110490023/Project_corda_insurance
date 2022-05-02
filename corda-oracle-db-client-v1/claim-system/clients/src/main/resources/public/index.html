@@ -22,6 +22,7 @@ COMING WEEKS, WE'LL WRITE A TUTORIAL ON HOW BEST TO DO THIS.
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
@@ -29,7 +30,7 @@ COMING WEEKS, WE'LL WRITE A TUTORIAL ON HOW BEST TO DO THIS.
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.1/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.2.0/ui-bootstrap-tpls.min.js"></script>
     <script src="js/main.js"></script>
-<!--    <script src="js/createIOUModal.js"></script>-->
+    <script src="js/createClaimModal.js"></script>
 <!--    <script src="js/issueCashModal.js"></script>-->
 <!--    <script src="js/transferModal.js"></script>-->
 <!--    <script src="js/settleModal.js"></script>-->
@@ -41,25 +42,117 @@ COMING WEEKS, WE'LL WRITE A TUTORIAL ON HOW BEST TO DO THIS.
         <div class="navbar-header">
             <a class="navbar-brand" href="#">{{demoApp.thisNode}}</a>
         </div>
-<!--        <button ng-click="demoApp.openCreateIOUModal()" type="button" class="btn btn-primary navbar-btn">Create IOU</button>-->
-<!--        <button ng-click="demoApp.openIssueCashModal()" type="button" class="btn btn-primary navbar-btn">Issue cash</button>-->
+        <button ng-click="demoApp.openCreateClaimModal()" type="button" class="btn btn-primary">Create Claim</button>
         <button ng-click="demoApp.refresh()" type="button" class="btn btn-default navbar-btn"><span
                 class="glyphicon glyphicon-refresh"></span></button>
     </div>
 </nav>
 
-<!--<script type="text/ng-template" id="createIOUModal.html">-->
-<!--    <div class="modal-header">-->
+<script type="text/ng-template" id="createClaim.html">
+   <div class="modal-header">
+       <h4 class="modal-title">Add Claim</h4>
+   </div>
+   <form>
+       <div class="modal-body">
+            <div class="form-group">
+                <label for="createHN" class="control-label">HN:</label>
+                <input type="text" ng-model="createClaimModal.form.HN" class="form-control" id="HN">
+            </div>
+            <div class="form-group">
+                <label for="createInsID" class="control-label">InsID:</label>
+                <input type="text" ng-model="createClaimModal.form.InsID" class="form-control" id="InsID">
+            </div>
+            <div class="form-group">
+                <label for="createIOUCounterparty" class="control-label">Counter-party:</label>
+                <select ng-model="createClaimModal.form.counterparty" class="form-control" id="counterparty"
+                        ng-options="peer as peer for peer in createClaimModal.peers">
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="createAmount" class="control-label">Amount:</label>
+               <input type="text" ng-model="createClaimModal.form.amount" class="form-control" id="Amount">
+            </div>
+           <div ng-show="createClaimModal.formError" class="form-group">
+                <div class="alert alert-danger" role="alert">
+                   <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                   <span class="sr-only">Error:</span>
+                   Enter valid claim creation parameters
+               </div>
+           </div>
+       </div>
+        <div class="modal-footer">
+            <button ng-click="createClaimModal.cancel()" type="button" class="btn btn-default">Close</button>
+            <button ng-click="createClaimModal.create()" type="button" class="btn btn-primary">Confirm Claim</button>
+        </div>
+    </form>
+</script>
+
+<script type="text/ng-template" id="createClaimMsgModal.html">
+    <div class="modal-body" id="create-claim-modal-body">
+        {{ createClaimMsgModal.message }}
+        666666777777777
+    </div>
+</script>
+
+<div class="row">
+   <div class="col-md-1"></div>
+   <div class="col-md-10">
+        <div ng-show="!demoApp.cliams.length" class="panel panel-primary">
+           <div class="panel-heading">
+               <h3 class="panel-title">There are no recorded IOUs</h3>
+            </div>
+            <div class="panel-body">Use the "Create IOU" button to send an IOU to a peer.</div>
+        </div>
+        <div ng-show="demoApp.claims.length" class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Recorded Claims:</h3>
+            </div>
+            <div class="panel-body">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Amount</th>
+                        <th>Paid</th>
+                        <th>Actions</th>
+                   </tr>
+                   </thead>
+                   <tbody>
+                   <tr ng-repeat="iou in demoApp.ious">
+                       <!-- <td class="vert-align">{{iou.lender}}</td>
+                       <td class="vert-align">{{iou.borrower}}</td>
+                       <td class="vert-align">{{iou.amount}}</td>
+                       <td class="vert-align">{{iou.paid}}</td> -->
+                       <!-- <td>
+                           <div class="btn-group" role="group">
+                                <button ng-click="demoApp.openTransferModal(iou.linearId.id)" type="button" class="btn btn-primary">Transfer
+                                </button>
+                                <button ng-click="demoApp.openSettleModal(iou.linearId.id)" type="button" class="btn btn-primary">Settle
+                                </button>
+                           </div>
+                       </td> -->
+                   </tr>
+                   </tbody>
+               </table>
+           </div>
+       </div>
+       <div class="col-md-1"></div>
+   </div>
+</div>
+
+<!-- <script type="text/ng-template" id="createIOUModal.html"> -->
+<!-- <div class="modal-header">-->
 <!--        <h4 class="modal-title">Add new IOU</h4>-->
 <!--    </div>-->
 <!--    <form>-->
 <!--        <div class="modal-body">-->
-<!--            <div class="form-group">-->
+<!--            <div class="form-group"> -->
 <!--                <label for="createIOUCounterparty" class="control-label">Counter-party:</label>-->
 <!--                <select ng-model="createIOUModal.form.counterparty" class="form-control" id="createIOUCounterparty"-->
 <!--                        ng-options="peer as peer for peer in createIOUModal.peers">-->
 <!--                </select>-->
-<!--            </div>-->
+<!--            </div> -->
 <!--            <div class="form-group">-->
 <!--                <label for="createIOUCurrency" class="control-label">Currency (ISO code):</label>-->
 <!--                <input type="text" ng-model="createIOUModal.form.currency" class="form-control" id="createIOUCurrency">-->
@@ -218,52 +311,6 @@ COMING WEEKS, WE'LL WRITE A TUTORIAL ON HOW BEST TO DO THIS.
 <!--    </div>-->
 <!--</div>-->
 
-<!--<div class="row">-->
-<!--    <div class="col-md-1"></div>-->
-<!--    <div class="col-md-10">-->
-<!--        <div ng-show="!demoApp.ious.length" class="panel panel-primary">-->
-<!--            <div class="panel-heading">-->
-<!--                <h3 class="panel-title">There are no recorded IOUs</h3>-->
-<!--            </div>-->
-<!--            <div class="panel-body">Use the "Create IOU" button to send an IOU to a peer.</div>-->
-<!--        </div>-->
-<!--        <div ng-show="demoApp.ious.length" class="panel panel-primary">-->
-<!--            <div class="panel-heading">-->
-<!--                <h3 class="panel-title">Recorded IOUs:</h3>-->
-<!--            </div>-->
-<!--            <div class="panel-body">-->
-<!--                <table class="table">-->
-<!--                    <thead>-->
-<!--                    <tr>-->
-<!--                        <th>From</th>-->
-<!--                        <th>To</th>-->
-<!--                        <th>Amount</th>-->
-<!--                        <th>Paid</th>-->
-<!--                        <th>Actions</th>-->
-<!--                    </tr>-->
-<!--                    </thead>-->
-<!--                    <tbody>-->
-<!--                    <tr ng-repeat="iou in demoApp.ious">-->
-<!--                        <td class="vert-align">{{iou.lender}}</td>-->
-<!--                        <td class="vert-align">{{iou.borrower}}</td>-->
-<!--                        <td class="vert-align">{{iou.amount}}</td>-->
-<!--                        <td class="vert-align">{{iou.paid}}</td>-->
-<!--                        <td>-->
-<!--                            <div class="btn-group" role="group">-->
-<!--                                <button ng-click="demoApp.openTransferModal(iou.linearId.id)" type="button" class="btn btn-primary">Transfer-->
-<!--                                </button>-->
-<!--                                <button ng-click="demoApp.openSettleModal(iou.linearId.id)" type="button" class="btn btn-primary">Settle-->
-<!--                                </button>-->
-<!--                            </div>-->
-<!--                        </td>-->
-<!--                    </tr>-->
-<!--                    </tbody>-->
-<!--                </table>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="col-md-1"></div>-->
-<!--    </div>-->
-<!--</div>-->
 
 </body>
 </html>

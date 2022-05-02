@@ -8,12 +8,9 @@ import net.corda.core.identity.Party;
 import net.corda.core.messaging.CordaRPCOps;
 import net.corda.core.node.NodeInfo;
 import net.corda.core.transactions.SignedTransaction;
-//import net.corda.finance.contracts.asset.Cash;
-//import net.corda.samples.obligation.flows.IOUIssueFlow;
-//import net.corda.samples.obligation.flows.IOUSettleFlow;
-//import net.corda.samples.obligation.flows.IOUTransferFlow;
-//import net.corda.samples.obligation.flows.SelfIssueCashFlow;
-//import net.corda.samples.obligation.states.IOUState;
+import net.corda.samples.oracle.flows.ProposeClaimFlow;
+import net.corda.samples.oracle.contracts.ClaimContract;
+import net.corda.samples.oracle.states.Claim;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.*;
@@ -38,7 +35,7 @@ import static org.springframework.http.MediaType.TEXT_PLAIN_VALUE;
  * Define your API endpoints here.
  */
 @RestController
-@RequestMapping("/api/iou") // The paths for HTTP requests are relative to this base path.
+@RequestMapping("/api/") // The paths for HTTP requests are relative to this base path.
 public class MainController {
     private static final Logger logger = LoggerFactory.getLogger(RestController.class);
     private final CordaRPCOps proxy;
@@ -137,6 +134,37 @@ public class MainController {
         HashMap<String, String> myMap = new HashMap<>();
         myMap.put("me", me.toString());
         return myMap;
+    }
+    /**
+     * Example request:
+     * curl -X GET 'http://localhost:3000/api/createClaim?HN=002715&InsID=A0840672&insuranceName=InsuranceA&amount=1000.0'
+     * HN=002715&InsID=A0840672&insurance=InsuranceA&amount=1000.0
+     */
+    @PutMapping(value ="createClaim" , produces = TEXT_PLAIN_VALUE )
+    public  ResponseEntity<String> createClaim(@RequestParam(value = "HN") String HN,
+                                             @RequestParam(value = "InsID") String InsID,
+                                             @RequestParam(value = "insuranceName") String insuranceName,
+                                             @RequestParam(value = "amount") double amount)throws IllegalArgumentException {
+        Party insurance = Optional.ofNullable(proxy.wellKnownPartyFromX500Name(CordaX500Name.parse(insuranceName)))
+                    .orElseThrow(() -> new IllegalArgumentException("Unknown insurance name."));
+        try {
+            SignedTransaction result = proxy.startTrackedFlowDynamic(ProposeClaimFlow.ProposeClaimInitiator.class,
+                                            HN,InsID,insurance,amount).getReturnValue().get();
+            System.out.println("Maincotroller.java 153 ");
+            System.out.println("Transaction id" + result.getId());
+            return ResponseEntity
+                        .status(HttpStatus.CREATED)
+                        .body("Transaction id"+ result.getId() +" committed to ledger. \n " + result.getTx().getOutput(0));
+
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
+        }
+    } 
+    //getclaimState 
+    @GetMapping(value = "/claims",produces = APPLICATION_JSON_VALUE)
+    public List<StateAndRef<Claim>> getClaims() {
+        // Filter by states type: IOU.
+        return proxy.vaultQuery(Claim.class).getStates();
     }
 
 }

@@ -4,7 +4,6 @@ import net.corda.core.contracts.Command;
 import net.corda.core.crypto.TransactionSignature;
 import net.corda.core.transactions.FilteredTransaction;
 import net.corda.samples.oracle.contracts.ClaimContract;
-import net.corda.samples.oracle.contracts.PrimeContract;
 import net.corda.samples.oracle.states.Claim;
 import net.corda.core.flows.*;
 import net.corda.core.identity.CordaX500Name;

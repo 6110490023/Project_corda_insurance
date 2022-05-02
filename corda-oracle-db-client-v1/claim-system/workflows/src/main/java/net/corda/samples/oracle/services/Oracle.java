@@ -201,7 +201,7 @@ public class Oracle extends SingletonSerializeAsToken {
         }
         return count;
     }
-    private Integer getCountCliamFormDataBase(String insuranceID) {
+    private Integer getCountCliamFormDataBase(String InsID) {
         int count = -1;
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -210,21 +210,21 @@ public class Oracle extends SingletonSerializeAsToken {
             String url = "jdbc:mysql://localhost/"+name_db;
             Connection conn = null;
             conn  = DriverManager.getConnection(url,"root", "");
-            System.out.print("Database is connected !");
+            System.out.println("Database is connected !");
 
 
             Statement stmt = conn.createStatement();
-            String QUERY = "SELECT * from "+ name_table + " WHERE insuranceID = '"+insuranceID+"'";
+            String QUERY = "SELECT * from "+ name_table + " WHERE InsID = '"+InsID+"'";
             ResultSet rs = stmt.executeQuery(QUERY);
             while (rs.next()) {
                 System.out.println("ID: " + rs.getInt("id"));
-                System.out.println("insuranceID: " + rs.getString("insuranceID"));
-                System.out.println(" First: " + rs.getString("name"));
-                System.out.println(", surname: " + rs.getString("surname"));
+                System.out.println("InsID: " + rs.getString("InsID"));
+                System.out.println("First: " + rs.getString("name"));
+                System.out.println("Surname: " + rs.getString("surname"));
                 count = rs.getInt("count");
                 System.out.println("count: " + count);
-                System.out.println("limit: " + rs.getInt("limit"));
-                System.out.println("cID: " + rs.getString("cID"));
+                System.out.println("limitCost: " + rs.getInt("limitCost"));
+                System.out.println("cID: " + rs.getString("cid"));
             }
             rs.close();
             stmt.close();
