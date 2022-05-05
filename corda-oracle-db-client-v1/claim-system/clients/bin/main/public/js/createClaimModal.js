@@ -26,13 +26,14 @@ angular.module('demoAppModule').controller('CreateClaimModalCtrl', function($htt
                 //`issue-iou?amount=${amount}&currency=${currency}&party=${party}`;
 
             // We hit the endpoint to create the Claim and handle success/failure responses.
-            
-            
-            $http.put(createClaimEndpoint).then(
-                () => {consol.log("55555");},
-                // () => {console.log("66666");},
+            $http.put(createClaimEndpoint).then(()=>{
+                // Update the list of IOUs.
+
+                $http.get(apiBaseURL + "claims").then((response) => demoApp.claims =
+                Object.keys(response.data).map((key) => response.data[key].state.data));},
                 (result) => createIOUModal.displayMessage(result),
                 (result) => createIOUModal.displayMessage(result)
+
     
             );
             

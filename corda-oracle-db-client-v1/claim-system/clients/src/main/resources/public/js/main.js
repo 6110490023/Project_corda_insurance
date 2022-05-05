@@ -90,10 +90,10 @@ angular.module('demoAppModule', ['ui.bootstrap']).controller('DemoAppCtrl', func
 
     /** Refreshes the front-end. */
     demoApp.refresh = () => {
-        //        // Update the list of IOUs.
-        //        $http.get(apiBaseURL + "ious").then((response) => demoApp.ious =
-        //            Object.keys(response.data).map((key) => response.data[key].state.data));
-        //
+                // Update the list of IOUs.
+                $http.get(apiBaseURL + "claims").then((response) => demoApp.claims =
+                    Object.keys(response.data).map((key) => response.data[key].state.data));
+
         //        // Update the cash balances.
         //        $http.get(apiBaseURL + "cash-balances").then((response) => demoApp.cashBalances =
         //            response.data);

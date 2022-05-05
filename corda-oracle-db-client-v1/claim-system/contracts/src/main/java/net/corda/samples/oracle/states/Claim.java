@@ -24,7 +24,6 @@ public class Claim implements LinearState {
     private final Party hospital;
     private boolean isAccept;
     private final Party issuer;
-
     private final UniqueIdentifier linearId;
 
     // ALL Corda State required parameter to indicate storing parties
@@ -47,7 +46,7 @@ public class Claim implements LinearState {
         this.hospital = hospital;
         this.isAccept = false;
         this.issuer = issuer;
-        this.insurancePay= 0;
+        this.insurancePay = (1500> amount)? amount:1500.0;;
         this.linearId = linearId;
         this.participants = new ArrayList<AbstractParty>();
         this.participants.add(hospital);

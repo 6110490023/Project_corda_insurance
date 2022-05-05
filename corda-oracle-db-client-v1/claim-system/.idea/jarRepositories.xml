@@ -36,5 +36,10 @@
       <option name="name" value="maven5" />
       <option name="url" value="https://jitpack.io" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven7" />
+      <option name="name" value="maven7" />
+      <option name="url" value="https://ci-artifactory.corda.r3cev.com/artifactory/corda-releases" />
+    </remote-repository>
   </component>
 </project>

@@ -97,13 +97,13 @@ COMING WEEKS, WE'LL WRITE A TUTORIAL ON HOW BEST TO DO THIS.
 <div class="row">
    <div class="col-md-1"></div>
    <div class="col-md-10">
-        <div ng-show="!demoApp.cliams.length" class="panel panel-primary">
+        <div ng-show="!demoApp.claims.length" class="panel panel-primary">
            <div class="panel-heading">
                <h3 class="panel-title">There are no recorded IOUs</h3>
             </div>
             <div class="panel-body">Use the "Create IOU" button to send an IOU to a peer.</div>
         </div>
-        <div ng-show="demoApp.claims.length" class="panel panel-primary">
+        <div ng-show=" demoApp.claims.length" class="panel panel-primary">
             <div class="panel-heading">
                 <h3 class="panel-title">Recorded Claims:</h3>
             </div>
@@ -111,27 +111,22 @@ COMING WEEKS, WE'LL WRITE A TUTORIAL ON HOW BEST TO DO THIS.
                 <table class="table">
                     <thead>
                     <tr>
-                        <th>From</th>
-                        <th>To</th>
-                        <th>Amount</th>
-                        <th>Paid</th>
-                        <th>Actions</th>
+                        <th>Hospital</th>
+                        <th>HN</th>
+                        <th>Insurance</th>
+                        <th>InsID</th>
+                        <th>insurancePay</th>
+                        <th>id</th>
                    </tr>
                    </thead>
                    <tbody>
-                   <tr ng-repeat="iou in demoApp.ious">
-                       <!-- <td class="vert-align">{{iou.lender}}</td>
-                       <td class="vert-align">{{iou.borrower}}</td>
-                       <td class="vert-align">{{iou.amount}}</td>
-                       <td class="vert-align">{{iou.paid}}</td> -->
-                       <!-- <td>
-                           <div class="btn-group" role="group">
-                                <button ng-click="demoApp.openTransferModal(iou.linearId.id)" type="button" class="btn btn-primary">Transfer
-                                </button>
-                                <button ng-click="demoApp.openSettleModal(iou.linearId.id)" type="button" class="btn btn-primary">Settle
-                                </button>
-                           </div>
-                       </td> -->
+                   <tr ng-repeat="claim in demoApp.claims">
+                       <td class="vert-align">{{claim.hospital}}</td>
+                       <td class="vert-align">{{claim.hospitalNumber}}</td>
+                       <td class="vert-align">{{claim.insurance}}</td>
+                       <td class="vert-align">{{claim.insuranceID}}</td>
+                       <td class="vert-align">{{claim.amount}}</td>
+                       <td class="vert-align">{{claim.linearId.id}}</td>
                    </tr>
                    </tbody>
                </table>
@@ -140,7 +135,8 @@ COMING WEEKS, WE'LL WRITE A TUTORIAL ON HOW BEST TO DO THIS.
        <div class="col-md-1"></div>
    </div>
 </div>
-
+</body>
+</html>
 <!-- <script type="text/ng-template" id="createIOUModal.html"> -->
 <!-- <div class="modal-header">-->
 <!--        <h4 class="modal-title">Add new IOU</h4>-->
@@ -312,5 +308,3 @@ COMING WEEKS, WE'LL WRITE A TUTORIAL ON HOW BEST TO DO THIS.
 <!--</div>-->
 
 
-</body>
-</html>
