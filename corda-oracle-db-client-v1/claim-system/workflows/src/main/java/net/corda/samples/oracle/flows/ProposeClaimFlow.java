@@ -4,7 +4,7 @@ import net.corda.core.contracts.Command;
 import net.corda.core.crypto.TransactionSignature;
 import net.corda.core.transactions.FilteredTransaction;
 import net.corda.samples.oracle.contracts.ClaimContract;
-import net.corda.samples.oracle.states.Claim;
+import net.corda.samples.oracle.states.ClaimState;
 import net.corda.core.flows.*;
 import net.corda.core.identity.CordaX500Name;
 import net.corda.core.identity.Party;
@@ -54,7 +54,7 @@ public class ProposeClaimFlow {
 
             UniqueIdentifier uniqueID = new UniqueIdentifier();
             System.out.println("ClaimID: " + uniqueID);
-            Claim newClaim = new Claim(this.amount,count,this.hospitalNumber,this.insuranceID,this.insurance,this.getOurIdentity(),this.getOurIdentity(),uniqueID);
+            ClaimState newClaim = new ClaimState(this.amount,count,this.hospitalNumber,this.insuranceID,this.insurance,this.getOurIdentity(),this.getOurIdentity(),uniqueID);
             //Compositing the transaction
             TransactionBuilder txBuilder = new TransactionBuilder(notary)
                     .addOutputState(newClaim)

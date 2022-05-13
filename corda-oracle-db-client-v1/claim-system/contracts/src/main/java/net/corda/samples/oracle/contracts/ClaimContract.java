@@ -1,5 +1,5 @@
 package net.corda.samples.oracle.contracts;
-import net.corda.samples.oracle.states.Claim;
+import net.corda.samples.oracle.states.ClaimState;
 import net.corda.core.contracts.CommandData;
 import net.corda.core.contracts.Contract;
 import net.corda.core.transactions.LedgerTransaction;
@@ -19,7 +19,7 @@ public class ClaimContract implements Contract {
 
         //Verify the transaction according to the intention of the transaction
         if (commandData instanceof ClaimContract.Commands.CreateClaim){
-            Claim output = tx.outputsOfType(Claim.class).get(0);
+            ClaimState output = tx.outputsOfType(ClaimState.class).get(0);
             requireThat(require -> {
                 require.using("This transaction should only have one user state as output", tx.getOutputs().size() == 1);
                 require.using("The output user state should have name goods", !output.getHospitalNumber().equals(""));
@@ -31,8 +31,8 @@ public class ClaimContract implements Contract {
         }
         else if (commandData instanceof ClaimContract.Commands.AcceptClaim ) {
             //Retrieve the output state of the transaction
-            Claim input = tx.inputsOfType(Claim.class).get(0);
-            Claim output = tx.outputsOfType(Claim.class).get(0);
+            ClaimState input = tx.inputsOfType(ClaimState.class).get(0);
+            ClaimState output = tx.outputsOfType(ClaimState.class).get(0);
 
             //Using Corda DSL function requireThat to replicate conditions-checks
             requireThat(require -> {

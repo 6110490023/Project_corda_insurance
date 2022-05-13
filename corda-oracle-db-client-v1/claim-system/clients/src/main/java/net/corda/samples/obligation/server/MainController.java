@@ -9,11 +9,11 @@ import net.corda.core.messaging.CordaRPCOps;
 import net.corda.core.node.NodeInfo;
 import net.corda.core.transactions.SignedTransaction;
 import net.corda.samples.oracle.flows.ProposeClaimFlow;
-import net.corda.samples.oracle.contracts.ClaimContract;
-import net.corda.samples.oracle.states.Claim;
+import net.corda.samples.oracle.states.ClaimState;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.*;
+
 import org.bouncycastle.asn1.x500.X500Name;
 import org.bouncycastle.asn1.x500.style.BCStyle;
 import org.slf4j.Logger;
@@ -162,9 +162,9 @@ public class MainController {
     } 
     //getclaimState 
     @GetMapping(value = "/claims",produces = APPLICATION_JSON_VALUE)
-    public List<StateAndRef<Claim>> getClaims() {
+    public List<StateAndRef<ClaimState>> getClaims() {
         // Filter by states type: IOU.
-        return proxy.vaultQuery(Claim.class).getStates();
+        return proxy.vaultQuery(ClaimState.class).getStates();
     }
 
 }

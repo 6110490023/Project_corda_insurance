@@ -9,18 +9,11 @@ import net.corda.core.transactions.ComponentVisibilityException;
 import net.corda.core.transactions.FilteredTransaction;
 import net.corda.core.transactions.FilteredTransactionVerificationException;
 import net.corda.samples.oracle.contracts.ClaimContract;
-import net.corda.samples.oracle.contracts.PrimeContract;
+import net.corda.samples.oracle.contracts.InsuranceContract;
 
-
-import java.net.HttpURLConnection;
-import java.net.URL;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
 import java.security.PublicKey;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.Scanner;
 
 import java.sql.*;
 
@@ -70,20 +63,7 @@ public class Oracle extends SingletonSerializeAsToken {
     // Clearly, most developers can generate a list of primes and all but the largest prime numbers can be verified
     // deterministically in reasonable time. As such, it would be possible to add a constraint in the
     // [PrimeContract.verify] function that checks the nth prime is indeed the specified number.
-    public Integer query(Integer n) {
-        if (n < 1) {
-            throw new IllegalArgumentException("n must be at least one.");
-        }
 
-        return getNthPrime(n);
-    }
-    public Integer query2(String insuranceID) {
-        if (insuranceID == "") {
-            throw new IllegalArgumentException("nameCustomer must be at least one Character.");
-        }
-
-        return getCountCliam(insuranceID);
-    }
     public Integer query3(String insuranceID) {
         if (insuranceID == "") {
             throw new IllegalArgumentException("nameCustomer must be at least one Character.");
@@ -126,83 +106,30 @@ public class Oracle extends SingletonSerializeAsToken {
      * - Has the oracle listed as a signer
      */
     private boolean isCommandWithCorrectPrimeAndIAmSigner(Object elem) {
-        if (elem instanceof Command && ((Command) elem).getValue() instanceof PrimeContract.Commands.Create) {
-            PrimeContract.Commands.Create cmdData = (PrimeContract.Commands.Create) ((Command) elem).getValue();
-            return (((Command) elem).getSigners().contains(myKey) && query(cmdData.getN()).equals(cmdData.getNthPrime()));
-        }
-        else if (elem instanceof Command && ((Command) elem).getValue() instanceof ClaimContract.Commands.CreateClaim) {
+        if (elem instanceof Command && ((Command) elem).getValue() instanceof ClaimContract.Commands.CreateClaim) {
             ClaimContract.Commands.CreateClaim cmdData = (ClaimContract.Commands.CreateClaim) ((Command) elem).getValue();
+            return (((Command) elem).getSigners().contains(myKey) && query3(cmdData.getInsuranceID()).equals(cmdData.getCount()));
+        }
+        else if (elem instanceof Command && ((Command) elem).getValue() instanceof InsuranceContract.Commands.InsuranceClaim) {
+            InsuranceContract.Commands.InsuranceClaim cmdData = (InsuranceContract.Commands.InsuranceClaim) ((Command) elem).getValue();
+            return (((Command) elem).getSigners().contains(myKey) && query3(cmdData.getInsuranceID()).equals(cmdData.getCount()));
+        }
+        else if (elem instanceof Command && ((Command) elem).getValue() instanceof InsuranceContract.Commands.AddClaim) {
+            InsuranceContract.Commands.AddClaim cmdData = (InsuranceContract.Commands.AddClaim) ((Command) elem).getValue();
             return (((Command) elem).getSigners().contains(myKey) && query3(cmdData.getInsuranceID()).equals(cmdData.getCount()));
         }
         return false;
     }
 
-    // generates prime number
-    private Integer getNthPrime(Integer n) {
-        int count = 0, num = 0, i = 0;
-        while (count < n) {
-            num = num + 1;
-            for (i = 2; i <= num; i++) { //Here we will loop from 2 to num
-                if (num % i == 0) {
-                    break;
-                }
-            }
-            if (i == num) {//if it is a prime number
-                count = count + 1;
-            }
-        }
-        return num;
-    }
+
+
 
     // generates countClaim
-    private Integer getCountCliam(String insuranceID) {
+
+    private Integer getCountCliamFormDataBase(String insuranceID) {
         int count = -1;
-        try {
+        String InsID = "";
 
-            URL url = new URL("http://localhost:3000/getcount/"+insuranceID);
-
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-            conn.setRequestMethod("GET");
-            conn.connect();
-
-            //Getting the response code
-            int responsecode = conn.getResponseCode();
-
-            if (responsecode != 200) {
-                throw new RuntimeException("HttpResponseCode: " + responsecode);
-            } else {
-
-                String inline = "";
-                Scanner scanner = new Scanner(url.openStream());
-
-                //Write all the JSON data into a string using a scanner
-                while (scanner.hasNext()) {
-                    inline += scanner.nextLine();
-                }
-
-                //Close the scanner
-                scanner.close();
-
-                //Using the JSON simple library parse the string into a json object
-                JSONParser jParse = new JSONParser();
-                JSONObject json_data = (JSONObject) jParse.parse(inline);
-                System.out.println(json_data);
-                //Get the required object from the above created object
-                System.out.println(json_data.get("countClaim").getClass().getSimpleName());
-                Long count1 = (Long) json_data.get("countClaim");
-                //Get the required data using its key
-                count = count1.intValue();
-
-
-            }
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return count;
-    }
-    private Integer getCountCliamFormDataBase(String InsID) {
-        int count = -1;
         try {
             Class.forName("com.mysql.jdbc.Driver");
             String name_db = "insurance_db";
@@ -214,14 +141,14 @@ public class Oracle extends SingletonSerializeAsToken {
 
 
             Statement stmt = conn.createStatement();
-            String QUERY = "SELECT * from "+ name_table + " WHERE InsID = '"+InsID+"'";
+            String QUERY = "SELECT * from "+ name_table + " WHERE InsID = '"+insuranceID+"'";
             ResultSet rs = stmt.executeQuery(QUERY);
             while (rs.next()) {
-                System.out.println("ID: " + rs.getInt("id"));
+                count = rs.getInt("count");
+                InsID = rs.getString("InsID");
                 System.out.println("InsID: " + rs.getString("InsID"));
                 System.out.println("First: " + rs.getString("name"));
                 System.out.println("Surname: " + rs.getString("surname"));
-                count = rs.getInt("count");
                 System.out.println("count: " + count);
                 System.out.println("limitCost: " + rs.getInt("limitCost"));
                 System.out.println("cID: " + rs.getString("cid"));

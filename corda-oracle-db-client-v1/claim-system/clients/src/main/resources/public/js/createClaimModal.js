@@ -31,10 +31,8 @@ angular.module('demoAppModule').controller('CreateClaimModalCtrl', function($htt
 
                 $http.get(apiBaseURL + "claims").then((response) => demoApp.claims =
                 Object.keys(response.data).map((key) => response.data[key].state.data));},
-                (result) => createIOUModal.displayMessage(result),
-                (result) => createIOUModal.displayMessage(result)
-
-    
+                (response) => createIOUModal.displayMessage(response),
+                (response) => createIOUModal.displayMessage(response)
             );
             
         }
