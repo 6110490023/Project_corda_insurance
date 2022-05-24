@@ -64,12 +64,19 @@ public class Oracle extends SingletonSerializeAsToken {
     // deterministically in reasonable time. As such, it would be possible to add a constraint in the
     // [PrimeContract.verify] function that checks the nth prime is indeed the specified number.
 
-    public Integer query3(String insuranceID) {
+    public Integer queryDataBase(String insuranceID) {
         if (insuranceID == "") {
             throw new IllegalArgumentException("nameCustomer must be at least one Character.");
         }
 
         return getCountCliamFormDataBase(insuranceID);
+    }
+    public Integer update(String insuranceID) {
+        if (insuranceID == "") {
+            throw new IllegalArgumentException("nameCustomer must be at least one Character.");
+        }
+
+        return updateToDatabase(insuranceID);
     }
 
     // Signs over a transaction if the specified Nth prime for a particular N is correct.
@@ -108,15 +115,15 @@ public class Oracle extends SingletonSerializeAsToken {
     private boolean isCommandWithCorrectPrimeAndIAmSigner(Object elem) {
         if (elem instanceof Command && ((Command) elem).getValue() instanceof ClaimContract.Commands.CreateClaim) {
             ClaimContract.Commands.CreateClaim cmdData = (ClaimContract.Commands.CreateClaim) ((Command) elem).getValue();
-            return (((Command) elem).getSigners().contains(myKey) && query3(cmdData.getInsuranceID()).equals(cmdData.getCount()));
+            return (((Command) elem).getSigners().contains(myKey) && queryDataBase(cmdData.getInsuranceID()).equals(cmdData.getCount()));
         }
         else if (elem instanceof Command && ((Command) elem).getValue() instanceof InsuranceContract.Commands.InsuranceClaim) {
             InsuranceContract.Commands.InsuranceClaim cmdData = (InsuranceContract.Commands.InsuranceClaim) ((Command) elem).getValue();
-            return (((Command) elem).getSigners().contains(myKey) && query3(cmdData.getInsuranceID()).equals(cmdData.getCount()));
+            return (((Command) elem).getSigners().contains(myKey) && queryDataBase(cmdData.getInsuranceID()).equals(cmdData.getCount()));
         }
         else if (elem instanceof Command && ((Command) elem).getValue() instanceof InsuranceContract.Commands.AddClaim) {
             InsuranceContract.Commands.AddClaim cmdData = (InsuranceContract.Commands.AddClaim) ((Command) elem).getValue();
-            return (((Command) elem).getSigners().contains(myKey) && query3(cmdData.getInsuranceID()).equals(cmdData.getCount()));
+            return (((Command) elem).getSigners().contains(myKey) && queryDataBase(cmdData.getInsuranceID()).equals(cmdData.getCount()));
         }
         return false;
     }
@@ -153,6 +160,50 @@ public class Oracle extends SingletonSerializeAsToken {
                 System.out.println("limitCost: " + rs.getInt("limitCost"));
                 System.out.println("cID: " + rs.getString("cid"));
             }
+            rs.close();
+            stmt.close();
+            conn.close();
+        }
+        catch(Exception e) {
+            System.out.print("Do not connect to DB - Error:"+e);
+            e.printStackTrace();
+        }
+
+        return count;
+    }
+
+    private Integer updateToDatabase(String insuranceID) {
+        int count = -1;
+        String InsID = "";
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            String name_db = "insurance_db";
+            String name_table = "user_table";
+            String url = "jdbc:mysql://localhost/"+name_db;
+            Connection conn = null;
+            conn  = DriverManager.getConnection(url,"root", "");
+            System.out.println("Database is connected !");
+
+
+            Statement stmt = conn.createStatement();
+            String QUERY = "SELECT * from "+ name_table + " WHERE InsID = '"+insuranceID+"'";
+            ResultSet rs = stmt.executeQuery(QUERY);
+            while (rs.next()) {
+                count = rs.getInt("count");
+                InsID = rs.getString("InsID");
+
+            }
+            count = count-1;
+            String QUERYUPDATE = "UPDATE "+ name_table + " SET count="+count+" WHERE InsID = '"+insuranceID+"'";
+            boolean result = stmt.execute(QUERYUPDATE);
+            if(!result){
+                System.out.println("Record Update Successfully");
+            }
+            else {
+                System.out.println("Record Update UnSuccessfully");
+            }
+
             rs.close();
             stmt.close();
             conn.close();

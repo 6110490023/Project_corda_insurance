@@ -10,13 +10,16 @@ import net.corda.core.identity.Party;
 public class QueryClaim extends FlowLogic<Integer>{
     private final Party oracle;
     private final String insuranceID;
-    public QueryClaim(Party oracle, String insuranceID) {
+    private final String commandOracle;
+    public QueryClaim(Party oracle, String insuranceID,String commandOracle) {
         this.oracle = oracle;
         this.insuranceID = insuranceID;
+        this.commandOracle =commandOracle;
     }
     @Suspendable
     @Override
     public Integer call() throws FlowException {
-        return initiateFlow(oracle).sendAndReceive(Integer.class, insuranceID).unwrap(it -> it);
+        String input = insuranceID+","+commandOracle;
+        return initiateFlow(oracle).sendAndReceive(Integer.class, input).unwrap(it -> it);
     }
 }

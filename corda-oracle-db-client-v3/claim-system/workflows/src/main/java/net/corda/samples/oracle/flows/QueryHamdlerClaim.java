@@ -35,12 +35,24 @@ public class QueryHamdlerClaim extends FlowLogic<Void> {
     public Void call() throws FlowException {
         progressTracker.setCurrentStep(RECEIVING);
         String request = session.receive(String.class).unwrap(it -> it);
+        String[] arryRequest = request.split(",");
+        String commandOracle = arryRequest[1];
+        request = arryRequest[0];
 
         progressTracker.setCurrentStep(CALCULATING);
         Integer response;
         try {
             // Get the nth prime from the oracle.
-            response = getServiceHub().cordaService(Oracle.class).query3(request);
+            if (commandOracle.equals("query")){
+                response = getServiceHub().cordaService(Oracle.class).queryDataBase(request);
+            }
+            else if (commandOracle.equals("update")){
+                response = getServiceHub().cordaService(Oracle.class).update(request);
+            }
+            else {
+                response = -1;
+            }
+
         } catch (Exception e) {
             // Re-throw the exception as a FlowException so its propagated to the querying node.
             throw new FlowException(e);

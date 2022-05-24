@@ -56,7 +56,7 @@ public class ClaimInsuranceFlow {
             if (oracle == null) {
                 throw new IllegalArgumentException("Requested oracle");
             }
-            int count = subFlow(new QueryClaim(oracle,this.insuranceID));
+            int count = subFlow(new QueryClaim(oracle,this.insuranceID,"query"));
 
             InsuranceState input = inputStateAndRef.getState().getData();
             Claim newClaim = new Claim(this.amount,count,this.claimID,this.claimDescription);
@@ -88,7 +88,11 @@ public class ClaimInsuranceFlow {
             FlowSession otherPartySession = initiateFlow(input.getInsurance());
             final SignedTransaction fullySignedTx = subFlow(new CollectSignaturesFlow(stx, Arrays.asList(otherPartySession)));
             // Notarise and record the transaction in both parties' vaults.
-                return subFlow(new FinalityFlow(fullySignedTx, Arrays.asList(otherPartySession)));
+
+            SignedTransaction result =  subFlow(new FinalityFlow(fullySignedTx, Arrays.asList(otherPartySession)));
+            count = subFlow(new QueryClaim(oracle,this.insuranceID,"update"));
+            System.out.println( count);
+            return result;
         }
     }
     @InitiatedBy(ClaimInsuranceFlow.ClaimInsuranceInitiator.class)

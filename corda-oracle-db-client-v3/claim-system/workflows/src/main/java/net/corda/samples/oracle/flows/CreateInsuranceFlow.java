@@ -43,7 +43,7 @@ public class CreateInsuranceFlow {
             //
 
             //Building the output ClaimState
-            int count = subFlow(new QueryClaim(oracle,this.insuranceID));
+            int count = subFlow(new QueryClaim(oracle,this.insuranceID,"query"));
             UniqueIdentifier uniqueID = new UniqueIdentifier();
             System.out.println("ClaimID: " + uniqueID);
             InsuranceState newInsurance = new InsuranceState(this.hospitalNumber,this.insuranceID,this.insurance,getOurIdentity(),uniqueID);
