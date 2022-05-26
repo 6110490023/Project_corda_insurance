@@ -32,7 +32,7 @@ public class CreateInsuranceFlow {
             /* Obtain a reference to a notary we wish to use.
             /** Explicit selection of notary by CordaX500Name - argument can by coded in flows or parsed from config (Preferred)*/
             //final Party notary = getServiceHub().getNetworkMapCache().getNotaryIdentities().get(0);
-            final Party notary = getServiceHub().getNetworkMapCache().getNotary(CordaX500Name.parse("O=Notary,L=Bangkok,C=TH"));
+            final Party notary = getServiceHub().getNetworkMapCache().getNotary(CordaX500Name.parse("O=BFT,L=Bangkok,C=TH"));
             //oracle เพื่อรับ count
             CordaX500Name oracleName = new CordaX500Name("Oracle", "Bangkok", "TH");
             Party oracle = getServiceHub().getNetworkMapCache().getNodeByLegalName(oracleName)
@@ -111,5 +111,5 @@ public class CreateInsuranceFlow {
         }
     }
 }
-//flow start CreateInsuranceInitiator hospitalNumber: 002715, insuranceID: A0840672, insurance: InsuranceA
+    //flow start CreateInsuranceInitiator hospitalNumber: 002715, insuranceID: A0840672, insurance: InsuranceA
 //run vaultQuery contractStateType: net.corda.samples.oracle.states.InsuranceState

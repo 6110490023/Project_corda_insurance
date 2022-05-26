@@ -107,15 +107,26 @@ task deployNodes(type: net.corda.plugins.Cordform, dependsOn: ['jar']) {
         projectCordapp {
             deploy = false
         }
+
+        cordapp project(":contracts")
+        cordapp project(":workflows")
         runSchemaMigration = true
 //        cordapp("$corda_release_group:corda-finance-contracts:$corda_release_version")
 //        cordapp("$corda_release_group:corda-finance-workflows:$corda_release_version")
 //        cordapp("$corda_release_group:corda-confidential-identities:$corda_release_version")
     }
 
+//Notary0
     node {
-        name "O=Notary,L=Bangkok,C=TH"
-        notary = [validating: false]
+        name "O=Notary0,L=Bangkok,C=TH"
+        notary = [
+                validating: false,
+                serviceLegalName: "O=BFT,L=Bangkok,C=TH",
+                bftSMaRt: [
+                        replicaId: 0,
+                        clusterAddresses: ["localhost:11000", "localhost:11010", "localhost:11020", "localhost:11030"]
+                ]
+        ]
         p2pPort 10002
         rpcSettings {
             address("localhost:10003")
@@ -123,6 +134,63 @@ task deployNodes(type: net.corda.plugins.Cordform, dependsOn: ['jar']) {
         }
         cordapps = []
     }
+
+    //Notary1
+    node {
+        name "O=Notary1,L=Bangkok,C=TH"
+        notary = [
+                validating: false,
+                serviceLegalName: "O=BFT,L=Bangkok,C=TH",
+                bftSMaRt: [
+                        replicaId: 1,
+                        clusterAddresses: ["localhost:11000", "localhost:11010", "localhost:11020", "localhost:11030"]
+                ]
+        ]
+        p2pPort 10014
+        rpcSettings {
+            address("localhost:10015")
+            adminAddress("localhost:10055")
+        }
+        cordapps = []
+    }
+    //Notary2
+    node {
+        name "O=Notary2,L=Bangkok,C=TH"
+        notary = [
+                validating: false,
+                serviceLegalName: "O=BFT,L=Bangkok,C=TH",
+                bftSMaRt: [
+                        replicaId: 2,
+                        clusterAddresses: ["localhost:11000", "localhost:11010", "localhost:11020", "localhost:11030"]
+                ]
+        ]
+        p2pPort 10017
+        rpcSettings {
+            address("localhost:10018")
+            adminAddress("localhost:10058")
+        }
+        cordapps = []
+    }
+    //Notary3
+    node {
+        name "O=Notary3,L=Bangkok,C=TH"
+        notary = [
+                validating: false,
+                serviceLegalName: "O=BFT,L=Bangkok,C=TH",
+                bftSMaRt: [
+                        replicaId: 3,
+                        clusterAddresses: ["localhost:11000", "localhost:11010", "localhost:11020", "localhost:11030"]
+                ]
+        ]
+        p2pPort 10020
+        rpcSettings {
+            address("localhost:10021")
+            adminAddress("localhost:10061")
+        }
+        cordapps = []
+    }
+
+    //Oracle
     node {
         name "O=Oracle,L=Bangkok,C=TH"
         p2pPort 10005
@@ -130,10 +198,11 @@ task deployNodes(type: net.corda.plugins.Cordform, dependsOn: ['jar']) {
             address("localhost:10006")
             adminAddress("localhost:10046")
         }
-        cordapp project(":contracts")
-        cordapp project(":workflows")
+
         rpcUsers = [[user: "user1", "password": "test", "permissions": ["ALL"]]]
     }
+
+    //insuranceA
     node {
         name "O=InsuranceA,L=Bangkok,C=TH"
         p2pPort 10008
@@ -141,12 +210,11 @@ task deployNodes(type: net.corda.plugins.Cordform, dependsOn: ['jar']) {
             address("localhost:10009")
             adminAddress("localhost:10049")
         }
-        cordapp project(":contracts")
-        cordapp project(":workflows")
+
         rpcUsers = [[user: "user1", "password": "test", "permissions": ["ALL"]]]
     }
 
-    
+    //hospitalA
     node {
         name "O=HostpitalA,L=Bangkok,C=TH"
         p2pPort 10011
@@ -154,52 +222,8 @@ task deployNodes(type: net.corda.plugins.Cordform, dependsOn: ['jar']) {
             address("localhost:10012")
             adminAddress("localhost:10052")
         }
-        cordapp project(":contracts")
-        cordapp project(":workflows")
+
         rpcUsers = [[user: "user1", "password": "test", "permissions": ["ALL"]]]
     }
-//    node {
-//        name "O=HostpitalB,L=Bangkok,C=TH"
-//        p2pPort 10014
-//        rpcSettings {
-//            address("localhost:10015")
-//            adminAddress("localhost:10055")
-//        }
-//        cordapp project(":contracts")
-//        cordapp project(":workflows")
-//        rpcUsers = [[user: "user1", "password": "test", "permissions": ["ALL"]]]
-//    }
-//    node {
-//        name "O=HostpitalC,L=Bangkok,C=TH"
-//        p2pPort 10017
-//        rpcSettings {
-//            address("localhost:10018")
-//            adminAddress("localhost:10058")
-//        }
-//        cordapp project(":contracts")
-//        cordapp project(":workflows")
-//        rpcUsers = [[user: "user1", "password": "test", "permissions": ["ALL"]]]
-//    }
-//    node {
-//        name "O=InsuranceB,L=Bangkok,C=TH"
-//        p2pPort 10020
-//        rpcSettings {
-//            address("localhost:10021")
-//            adminAddress("localhost:10061")
-//        }
-//        cordapp project(":contracts")
-//        cordapp project(":workflows")
-//        rpcUsers = [[user: "user1", "password": "test", "permissions": ["ALL"]]]
-//    }
-//    node {
-//        name "O=InsuranceC,L=Bangkok,C=TH"
-//        p2pPort 10023
-//        rpcSettings {
-//            address("localhost:10024")
-//            adminAddress("localhost:10064")
-//        }
-//        cordapp project(":contracts")
-//        cordapp project(":workflows")
-//        rpcUsers = [[user: "user1", "password": "test", "permissions": ["ALL"]]]
-//    }
+
 }
